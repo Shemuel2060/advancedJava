@@ -26,10 +26,19 @@ public class RprintInformation {
      * @param i
      */
     static void printArray(ArrayList<Object> arr, int i) {
-        if(i>arr.size()-1) // base/terminating conditions
+        if (i > arr.size() - 1) // base/terminating conditions
             return;
         System.out.println(arr.get(i)); // business logic
-        printArray(arr,i+1); // method called recursively        
+        printArray(arr, i + 1); // method called recursively        
+    }
+    
+    static void printArrayReverse(ArrayList<Object> arr, int i) {
+        assert i != arr.size() : "Out of bounds"; // need to enable this to work
+        
+        if (i < 0) // base/terminating conditions
+            return;
+        System.out.println(arr.get(i)); // business logic
+        printArrayReverse(arr, i - 1); // method called recursively
     }
     
     public static void main(String[] args) {
@@ -43,8 +52,11 @@ public class RprintInformation {
 
         // System.out.println(arr.size());
 
-        try{
-            printArray(arr,0);
+        try {
+            System.out.println("\nAscending order Printing\n");
+            printArray(arr, 0);
+            System.out.println("\nReversed order Printing\n");
+            printArrayReverse(arr, arr.size()-1);
         } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("An error occured");
         }
