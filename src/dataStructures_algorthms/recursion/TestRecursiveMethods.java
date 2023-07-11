@@ -12,12 +12,24 @@ public class TestRecursiveMethods {
 
     public static void main(String[] args) {
         /* ------------testing rbinarysearch() method ---------------------- */
-        int[] arr = new int[] { 1, 2, 3, 4, 5 };
+        // int[] arr = new int[] { 1, 2, 3, 4, 5 };
 
-        findInIntArray(arr, 0,4,2);
+        // findInIntArray(arr, 0, 4, 2);
+
+        /* -------- testing the quicksort algoritm -------------- */
+        
+        int[] list = { 5, 3, 2, 6 };
+
+       int[] list2= {2, 3, 2, 5, 6, 1, -2, 3, 14, 12};
+
+       RecursiveMethods.quicksort(list2,0,list2.length-1);
+       for (int i = 0; i < list2.length; i++)
+            System.out.print(list2[i] + " ");
+
+   }
        
         
-    }
+    
 
    /**
     * This method finds the value in an array of integers.

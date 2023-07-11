@@ -78,7 +78,7 @@ public class RecursiveMethods {
         // .......................................................................................................
 
         /**
-         * Apply QuicksortStep to the list of items in locations lo through hi
+         * Apply partition to the list of items in locations lo through hi
          * in the array A. The value returned by this routine is the final
          * position of the pivot item in the array.
          * 
@@ -87,7 +87,7 @@ public class RecursiveMethods {
          * @param hi
          * @return
          */
-        static int quicksortStep(int[] A, int lo, int hi) {
+        static int partition(int[] A, int lo, int hi) {
             int pivot = A[lo]; // Get the pivot value.
             // The numbers hi and lo mark the endpoints of a range
             // of numbers that have not yet been tested. Decrease hi
@@ -111,6 +111,9 @@ public class RecursiveMethods {
                 // space at A[hi].
                 A[lo] = A[hi];
                 lo++;
+
+                // lower part
+
                 while (hi > lo && A[lo] <= pivot) {
                     // Move lo up past numbers less than pivot.
                     // These numbers do not have to be moved.
@@ -124,13 +127,14 @@ public class RecursiveMethods {
                 A[hi] = A[lo];
                 hi--;
             } // end while
+            
             // At this point, lo has become equal to hi, and there is
             // an available space at that position. This position lies
             // between numbers less than pivot and numbers greater than
             // pivot. Put pivot in this space and return its location.
             A[lo] = pivot;
             return lo; // or return hi;
-        } // end QuicksortStep
+        } // end partition
 
         static void quicksort(int[] A, int lo, int hi) {
             if (hi <= lo) {
@@ -138,14 +142,88 @@ public class RecursiveMethods {
                 // to be done, so just return from the subroutine.
                 return;
             } else {
-                // Apply quicksortStep and get the new pivot position.
+                // Apply partition and get the new pivot position.
                 // Then apply quicksort to sort the items that
                 // precede the pivot and the items that follow it.
-                int pivotPosition = quicksortStep(A, lo, hi);
+                int pivotPosition = partition(A, lo, hi);
                 quicksort(A, lo, pivotPosition - 1); // below the pivot
                 quicksort(A, pivotPosition + 1, hi); // above the pivot
             }
         } // end of quicksort algorithm
+
+
+        /**
+         * merges two subarrays of arr[]. First subarray is arr[l..m] and
+         * second subarray is arr[n+1..r].
+         * @param arr
+         * @param lhi.
+         * @param m
+         * @param r
+         */
+        static void merge(int arr[], int l, int m, int r) {
+            // Find sizes of two subarrays to be merged
+            int n1 = m - l + 1;
+            int n2 = r - m;
+
+            // Create temp arrays
+            int L[] = new int[n1];
+            int R[] = new int[n2];
+
+            // Copy data to temp arrays
+            for (int i = 0; i < n1; ++i)
+                L[i] = arr[l + i];
+            for (int j = 0; j < n2; ++j)
+                R[j] = arr[m + 1 + j];
+
+            // Merge the temp arrays
+
+            // Initial indices of first and second subarrays
+            int i = 0, j = 0;
+
+            // Initial index of merged subarray array
+            int k = l;
+            while (i < n1 && j < n2) {
+                if (L[i] <= R[j]) {
+                    arr[k] = L[i];
+                    i++;
+                } else {
+                    arr[k] = R[j];
+                    j++;
+                }
+                k++;
+            }
+
+            // Copy remaining elements of L[] if any
+            while (i < n1) {
+                arr[k] = L[i];
+                i++;
+                k++;
+            }
+
+            // Copy remaining elements of R[] if any
+            while (j < n2) {
+                arr[k] = R[j];
+                j++;
+                k++;
+            }
+        }
+
+        // Main function that sorts arr[l..r] using
+        // merge()
+        void mergesort(int arr[], int l, int r) {
+            if (l < r) {
+
+                // Find the middle point
+                int m = l + (r - l) / 2;
+
+                // Sort first and second halves
+                mergesort(arr, l, m);
+                mergesort(arr, m + 1, r);
+
+                // Merge the sorted halves
+                merge(arr, l, m, r);
+            }
+        } // end of mergesort algorithm
 
         // Function for fibonacci
         static int fib(int n) {

@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "BuddyStrings",
+            "request": "launch",
+            "mainClass": "leetCodeProblems.BuddyStrings",
+            "projectName": "AdvancedTopicsInJava_75f8213a"
+        },
+        {
+            "type": "java",
             "name": "TestRecursiveMethods",
             "request": "launch",
             "mainClass": "dataStructures_algorthms.recursion.TestRecursiveMethods",
