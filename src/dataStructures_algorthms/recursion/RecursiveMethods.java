@@ -206,11 +206,11 @@ public class RecursiveMethods {
                 j++;
                 k++;
             }
-        }
+        }// end merge algorithm
 
         // Main function that sorts arr[l..r] using
         // merge()
-        void mergesort(int arr[], int l, int r) {
+        static void mergesort(int arr[], int l, int r) {
             if (l < r) {
 
                 // Find the middle point
@@ -224,6 +224,21 @@ public class RecursiveMethods {
                 merge(arr, l, m, r);
             }
         } // end of mergesort algorithm
+
+        
+        static void insertionsort(int arr[]){
+
+            for (int i = 0; i < arr.length; i++) {
+                int currentElement = arr[i]; // temp is the current element
+                int k;
+                for (k = i - 1; k >= 0 && arr[k] > currentElement; k--) {
+                    arr[k+1] = arr[k]; // move the current element to one position behind.
+                }
+                arr[k+1] = currentElement; 
+                }
+                
+
+            }// end of insertionsort algorithm
 
         // Function for fibonacci
         static int fib(int n) {

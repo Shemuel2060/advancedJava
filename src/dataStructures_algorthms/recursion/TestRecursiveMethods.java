@@ -1,6 +1,6 @@
 package dataStructures_algorthms.recursion;
 
-import javax.swing.plaf.synth.SynthSeparatorUI;
+
 
 /**
  * This class tests the methods in the RecursiveMethods class on different
@@ -18,20 +18,25 @@ public class TestRecursiveMethods {
 
         /* -------- testing the quicksort algoritm -------------- */
         
-        int[] list = { 5, 3, 2, 6 };
+        // int[] list = { 5, 3, 2, 6 };
 
-       int[] list2= {2, 3, 2, 5, 6, 1, -2, 3, 14, 12};
+       int[] list= {2, 3, 2, 5, 6, 1, -2, 3, 14, 12};
 
-       RecursiveMethods.quicksort(list2,0,list2.length-1);
-       for (int i = 0; i < list2.length; i++)
-            System.out.print(list2[i] + " ");
+    //    RecursiveMethods.quicksort(list2,0,list2.length-1);
+    //    for (int i = 0; i < list2.length; i++)
+    //         System.out.print(list2[i] + " ");
 
-   }
-       
-        
-    
+//     RecursiveMethods.mergesort(list, 0, list.length - 1);
+//     for (int i = 0; i < list.length; i++)
+//         System.out.print(list[i] + " ");
 
-   /**
+RecursiveMethods.insertionsort(list);
+for (int i = 0; i < list.length; i++)
+    System.out.print(list[i] + " ");
+
+}
+
+    /**
     * This method finds the value in an array of integers.
     * @param A
     * @param loIndex
