@@ -1,5 +1,4 @@
 package dataStructures_algorthms.arrays_exceptions_algorithmes.ArrayHandling.GeneralArrays;
-import java.lang.reflect.Array;
 
 /**
  * This class shows several ways of working with arrays, from indexing 

@@ -210,7 +210,7 @@ public class RecursiveMethods {
 
         // Main function that sorts arr[l..r] using
         // merge()
-        static void mergesort(int arr[], int l, int r) {
+        public static void mergesort(int arr[], int l, int r) {
             if (l < r) {
 
                 // Find the middle point
