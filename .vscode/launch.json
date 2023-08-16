@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "conceptPractices.sorting.interfaces.relatables.Main",
+            "projectName": "advancedJava_2383de6e"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "conceptPractices.sorting.interfaces.Main",
+            "projectName": "advancedJava_2383de6e"
+        },
+        {
+            "type": "java",
             "name": "Introduction",
             "request": "launch",
             "mainClass": "generics_collections.generics.Introduction",
