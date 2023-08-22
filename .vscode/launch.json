@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MultiDimArrays",
+            "request": "launch",
+            "mainClass": "MultiDimensionalArrays.MultiDimArrays",
+            "projectName": "advancedJava_2383de6e"
+        },
+        {
+            "type": "java",
+            "name": "SortingAlgorithms",
+            "request": "launch",
+            "mainClass": "dataStructures_algorthms.arrays_exceptions_algorithmes.ArrayHandling.SearchingAndSortingAlgorithms.SortingAlgorithms",
+            "projectName": "advancedJava_2383de6e"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "conceptPractices.sorting.functionalInterfaces.Main",
+            "projectName": "advancedJava_2383de6e"
+        },
+        {
+            "type": "java",
+            "name": "TestSimpleTimeClient",
+            "request": "launch",
+            "mainClass": "conceptPractices.sorting.timedatezone.TestSimpleTimeClient",
+            "projectName": "advancedJava_2383de6e"
+        },
+        {
+            "type": "java",
+            "name": "SimpleTimeClient",
+            "request": "launch",
+            "mainClass": "conceptPractices.sorting.timedatezone.SimpleTimeClient",
+            "projectName": "advancedJava_2383de6e"
+        },
+        {
+            "type": "java",
             "name": "Main",
             "request": "launch",
             "mainClass": "conceptPractices.sorting.interfaces.relatables.Main",

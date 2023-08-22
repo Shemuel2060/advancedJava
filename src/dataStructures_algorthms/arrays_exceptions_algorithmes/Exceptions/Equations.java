@@ -1,5 +1,7 @@
 package dataStructures_algorthms.arrays_exceptions_algorithmes.Exceptions;
 
+import Exceptions.QuadraticEquations;
+
 /**
  * This class tests the solution to the three equations in
  * mathematics: linear, quadratic and cubic equations.
