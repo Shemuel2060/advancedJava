@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Function_FI",
+            "request": "launch",
+            "mainClass": "conceptPractices.sorting.functionalInterfaces.Function_FI",
+            "projectName": "advancedJava_2383de6e"
+        },
+        {
+            "type": "java",
             "name": "MultiDimArrays",
             "request": "launch",
             "mainClass": "MultiDimensionalArrays.MultiDimArrays",
