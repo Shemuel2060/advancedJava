@@ -1,0 +1,5 @@
+ADVANCED JAVA REVISION
+
+16/08/2023
+
+1. Added new interface to compare sizes of objects of the classes that implement it.
