@@ -91,12 +91,17 @@ public class Function_FI{
         return num.get();        
       }
 
-      public static void nextStudentAfterThis(int idx, String stuName){
-        BiConsumer<Integer, String> nextIn = (int idxNumber, String name)->{
-            idxNumber = idx+1; // index for next student...
-        };
-        nextIn.accept(34, "<NAME>");
-      }
+      /**
+       * This method takes the index and name of a student, and
+       * returns the student after that one in the list of students.
+       */
+    //   public static void nextStudentAfterThis(int idx, String stuName){
+    //     BiConsumer<Integer, String> nextIn = (Integer idxNumber, String name)->{
+    //         idx = idxNumber++; // index for next student...
+
+    //     };
+    //     nextIn.accept(34, "Samuel");
+    //   }
 
 
     public static void main(String[] args) {
