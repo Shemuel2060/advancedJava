@@ -1,8 +1,11 @@
-package conceptPractices.sorting.interfaces;
+package conceptPractices.sorting.interfaces.cards;
 
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
+
+import conceptPractices.sorting.interfaces.cards.Card.Rank;
+import conceptPractices.sorting.interfaces.cards.Card.Suit;
 
 public interface Deck {
 
@@ -29,7 +32,7 @@ public interface Deck {
      * adds a card to a deck
      * @param card
      */    
-    void addCard(Card card);
+    void addCard(Suit s, Rank r);
 
     /**
      * adds a list of cards to a deck

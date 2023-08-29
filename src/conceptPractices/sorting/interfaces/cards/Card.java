@@ -1,4 +1,4 @@
-package conceptPractices.sorting.interfaces;
+package conceptPractices.sorting.interfaces.cards;
 
 /**
  * This example is to demonstrate the use of default methods
@@ -50,20 +50,20 @@ public interface Card extends Comparable<Card> {
         KING   (13, "King" ),
         ACE    (14, "Ace"  );
 
-    private final int val;
-    private final String txt;
+    private final int value;
+    private final String text;
 
     Rank(int value, String text){
-        this.val = value;
-        this.txt = text;            
+        this.value = value;
+        this.text = text;            
         } // end of Rank constructor
 
-    public int rankVal(){
-            return val;
+    public int value(){
+            return value;
         }
 
-    public String rankText(){
-            return txt;
+    public String text(){
+            return text;
         }
 
     }// end of Rank enum "type"
