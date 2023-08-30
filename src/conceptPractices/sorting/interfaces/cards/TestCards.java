@@ -46,15 +46,56 @@ public class TestCards {
          * Sorting anything with a comparator instance
          */
         // get a comparator instance that sorts by rank of a card.
-        Comparator<Card> cmp = Comparator.comparing(card -> card.getRank()); // using lambda expression
-        Comparator<Card> cmps = Comparator.comparing(Card::getRank); // using method reference
-        myDeck.sort(cmps);
+        // Comparator<Card> cmp = Comparator.comparing(card -> card.getRank()); // using lambda expression
+        // Comparator<Card> cmps = Comparator.comparing(Card::getRank); // using method reference
+        // myDeck.sort(cmps);
         
-        System.out.println("\n------sorted by rank only through a comparator instance------\n");
+        // System.out.println("\n------sorted by rank only through a comparator instance------\n");
+        // for (Card c : addedCards) {
+        //     System.out.println("Rank: " + c.getRank());
+        // }
+        // System.out.println("                            ------------------\n");
+
+        // Comparing with a series of Comparator instances
+
+        myDeck.sort(Comparator
+                .comparing(Card::getRank) // compare first by rank
+                .thenComparing(Comparator.comparing(Card::getSuit))); // compare next by suit.
+
+        System.out.println("\n------sorted by rank then by suit------\n");
         for (Card c : addedCards) {
             System.out.println("Rank: " + c.getRank());
         }
         System.out.println("                            ------------------\n");
+        for (Card c : addedCards) {
+            System.out.println("Rank: " + c.getRank());
+        }
+        System.out.println("                            check the reversing------------------\n");
+        for (Card c : addedCards) {
+            System.out.println("Suit: " + c.getSuit());
+        }
+        System.out.println("                            ------------------\n");
+
+
+        // reverse() - default method in the Comparator interface
+        myDeck.sort(Comparator.
+                comparing(Card::getRank)
+                .reversed()
+        .thenComparing(Card::getSuit)        
+        );
+
+        System.out.println("\n------sorted by rank, reversed and then sorted by suit------\n");
+        for (Card c : addedCards) {
+            System.out.println("Rank: " + c.getRank());
+        }
+        System.out.println("                            ------------------\n");
+        for (Card c : addedCards) {
+            System.out.println("Suit: " + c.getSuit());
+        }
+        System.out.println("                            ------------------\n");
+
+
+    
     }
     
 
