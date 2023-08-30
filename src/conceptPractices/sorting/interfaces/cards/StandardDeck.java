@@ -61,7 +61,8 @@ public class StandardDeck implements Deck {
 
     @Override
     public void sort(Comparator<Card> c) {
-        Collections.sort(entireDeck, c);        
+        /* since Comparator is a functional interface, I can implement this with lambdas 
+        or method references. */
     }
 
     @Override
