@@ -1,5 +1,6 @@
 package conceptPractices.sorting.interfaces.cards;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
@@ -10,7 +11,7 @@ import conceptPractices.sorting.interfaces.cards.Card.Suit;
 
 public class StandardDeck implements Deck {
 
-    private List<Card> entireDeck;
+    private List<Card> entireDeck = new ArrayList<>();
     
 
     public void sort() {
