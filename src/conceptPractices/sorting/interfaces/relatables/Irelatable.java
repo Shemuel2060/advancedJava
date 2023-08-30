@@ -4,6 +4,9 @@ public interface Irelatable {
     // constants
     // static methods
     // default methods
+
+
+    
     // abstract methods
 
     /**
@@ -16,4 +19,8 @@ public interface Irelatable {
      * @return 1, 0, -1
      */
     public int isLargerThan(Irelatable other);
+
+    public int isSmallerThan(Irelatable other);
+
+    public int isEqualTo(Irelatable other);
 }
