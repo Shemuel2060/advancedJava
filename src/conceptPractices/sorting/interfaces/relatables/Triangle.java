@@ -2,7 +2,7 @@ package conceptPractices.sorting.interfaces.relatables;
 
 import java.awt.Point;
 
-public class Triangle implements Irelatable {
+public class Triangle extends FindBySize implements Irelatable {
     public int base = 0;
     public int height = 0;
     public Point origin;
@@ -48,4 +48,5 @@ public class Triangle implements Irelatable {
         else
             return 0;               
     }
+    
 }

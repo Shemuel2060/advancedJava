@@ -2,7 +2,7 @@ package conceptPractices.sorting.interfaces.relatables;
 
 import java.awt.Point;
 
-public class Cuboid implements Irelatable {
+public class Cuboid extends FindBySize implements Irelatable {
 
     public int width = 0;
     public int height = 0;
@@ -49,13 +49,14 @@ public class Cuboid implements Irelatable {
 
     @Override
     public int isLargerThan(Irelatable other) {
-        Cuboid otherRect = (Cuboid)other;
-        if (this.getVolume() < otherRect.getVolume())
+        Irelatable otherCuboid = other;
+        if (this.getVolume() < ((Cuboid)otherCuboid).getVolume())
             return -1;
-        else if (this.getVolume() > otherRect.getVolume())
+        else if (this.getVolume() > ((Cuboid) otherCuboid).getVolume())
             return 1;
         else
             return 0; 
     }
+    
     
 }

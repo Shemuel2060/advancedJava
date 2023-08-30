@@ -2,7 +2,7 @@ package conceptPractices.sorting.interfaces.relatables;
 
 import java.awt.Point;
 
-public class Rectangle implements Irelatable {
+public class Rectangle extends FindBySize implements Irelatable {
     public int width = 0;
     public int height = 0;
     public Point origin;
@@ -48,4 +48,5 @@ public class Rectangle implements Irelatable {
         else
             return 0;               
     }
+    
 }

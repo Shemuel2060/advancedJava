@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "conceptPractices.sorting.interfaces.relatables.Main",
+            "projectName": "AdvancedTopicsInJava_75f8213a"
+        },
+        {
+            "type": "java",
             "name": "TestCards",
             "request": "launch",
             "mainClass": "conceptPractices.sorting.interfaces.cards.TestCards",

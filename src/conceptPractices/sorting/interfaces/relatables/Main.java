@@ -5,7 +5,8 @@ public class Main {
     static Irelatable rect2 = new Rectangle(2,3);
 
     public static void main(String[] args) {
-        int comp = rect1.isLargerThan(rect2);
-        System.out.println(comp);
+        FindBySize find = new FindBySize();
+        Object largestRect = find.findLargest(rect1, rect2);
+       System.out.println(((Rectangle) largestRect).getArea());
     }
 }

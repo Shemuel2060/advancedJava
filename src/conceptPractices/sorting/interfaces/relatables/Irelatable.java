@@ -6,7 +6,7 @@ public interface Irelatable {
     // default methods
 
 
-    
+
     // abstract methods
 
     /**
@@ -20,7 +20,9 @@ public interface Irelatable {
      */
     public int isLargerThan(Irelatable other);
 
-    public int isSmallerThan(Irelatable other);
+    // other possible methods...
 
-    public int isEqualTo(Irelatable other);
+    // public int isSmallerThan(Irelatable other);
+
+    // public int isEqualTo(Irelatable other);
 }
