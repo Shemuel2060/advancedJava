@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CheckArrays",
+            "request": "launch",
+            "mainClass": "generics_collections.generics.CheckArrays",
+            "projectName": "AdvancedTopicsInJava_75f8213a"
+        },
+        {
+            "type": "java",
             "name": "Box",
             "request": "launch",
             "mainClass": "generics_collections.generics.Box",
