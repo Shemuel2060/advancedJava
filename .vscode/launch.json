@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "generics_collections.collectionsframework.collections.linkedlists.recursivelinking.Main",
+            "projectName": "AdvancedTopicsInJava_75f8213a"
+        },
+        {
+            "type": "java",
             "name": "CheckArrays",
             "request": "launch",
             "mainClass": "generics_collections.generics.CheckArrays",
