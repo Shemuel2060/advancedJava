@@ -1,6 +1,6 @@
 package generics_collections.generics;
 
-public class NaturalNumbers<T extends Integer> {
+public class NaturalNumbers<T extends Number> {
     private T n;
     
     NaturalNumbers(T n) {

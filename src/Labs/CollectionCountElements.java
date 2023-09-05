@@ -6,7 +6,7 @@ public class CollectionCountElements implements CountInCollections {
 
     @Override
     public <E> int countElementsInCollection(Collection<E> c) {
-        // TODO Auto-generated method stub
+        // put code logic here....
         return 0;
     }
 

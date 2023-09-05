@@ -4,7 +4,7 @@ import java.util.Collection;
 
 public interface CountInCollections {
     /**
-     * Thie method takes a collection ans is used to count
+     * This method takes a collection ans is used to count
      * elements in it that have a specific behaviour, e.g.
      * they can be odd numbers, even numbers, prime
      * numbers, palindromes, etc..    
