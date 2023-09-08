@@ -1,4 +1,4 @@
-package MultiDimensionalArrays;
+package dataStructures_algorthms.arrays_exceptions_algorithmes.MultiDimensionalArrays;
 
 /**
  * This class implements a symmetric array using the idea that for the

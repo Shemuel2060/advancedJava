@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "EvenNumber",
+            "request": "launch",
+            "mainClass": "generics_collections.generics.EvenNumber",
+            "projectName": "AdvancedTopicsInJava_75f8213a"
+        },
+        {
+            "type": "java",
+            "name": "WildCardGenericsDemo",
+            "request": "launch",
+            "mainClass": "generics_collections.generics.WildCardGenericsDemo",
+            "projectName": "AdvancedTopicsInJava_75f8213a"
+        },
+        {
+            "type": "java",
+            "name": "BoxDemo",
+            "request": "launch",
+            "mainClass": "generics_collections.generics.BoxDemo",
+            "projectName": "AdvancedTopicsInJava_75f8213a"
+        },
+        {
+            "type": "java",
             "name": "CheckArrays",
             "request": "launch",
             "mainClass": "generics_collections.generics.CheckArrays",

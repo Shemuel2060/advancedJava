@@ -1,0 +1,58 @@
+
+
+ArrayLists implement the dynamic behaviour of arrays. They can be paramterized or not. 
+The following methods are available for ArrayLists objects. For an ArrayList<T> list
+where T is an object:
+
+• list.size() — This function returns the current size of the list, that is, the number of
+items currently in the list. The only valid positions in the list are numbers in the range
+0 to list.size()-1. Note that the size can be zero. A call to the default constructor
+new ArrayList<T>() creates a list of size zero.
+• list.add(obj) — Adds an object onto the end of the list, increasing the size by 1. The
+parameter, obj, can refer to an object of type T, or it can be null.
+• list.get(N) — This function returns the value stored at position N in the list. The
+return type of this function is T. N must be an integer in the range 0 to list.size()-1.
+If N is outside this range, an error of type IndexOutOfBoundsException occurs. Calling
+this function is similar to referring to A[N] for an array, A, except that you can’t use
+list.get(N) on the left side of an assignment statement.
+• list.set(N, obj) — Assigns the object, obj, to position N in the ArrayList, replacing the
+item previously stored at position N. The parameter obj must be of type T. The integer
+N must be in the range from 0 to list.size()-1. A call to this function is equivalent to
+the command A[N] = obj for an array A.
+• list.clear() — Removes all items from the list, setting its size to zero.
+• list.remove(N) — For an integer, N, this removes the N-th item in the ArrayList. N must
+be in the range 0 to list.size()-1. Any items in the list that come after the removed
+item are moved up one position. The size of the list decreases by 1.
+• list.remove(obj) — If the specified object occurs somewhere in the list, it is removed
+from the list. Any items in the list that come after the removed item are moved up one
+position. The size of the ArrayList decreases by 1. If obj occurs more than once in the
+list, only the first copy is removed. If obj does not occur in the list, nothing happens;
+this is not an error.
+• list.indexOf(obj) — A function that searches for the object, obj, in the list. If the
+object is found in the list, then the first position number where it is found is returned. If
+the object is not found, then -1 is returned.
+
+
+
+ADDING STUDENTS
+To add a bunch of students at once, I can source them from the following channels:
+1. An excel sheet
+2. A database
+3. Input one by one:
+    a. from the terminal
+    b. using an interface created with javafx.  
+4. Json file.
+    a. I have used very manual ways of handling these for now. I will seek
+    to make them more robust and more function. For instance, I will need
+    to access the json file from the resources folder using the stream API
+    or something that can accomplish such task.
+
+    b. I will need to be able to create a list of students in a go rather
+    than creating one student at a time. And will have to convert this list
+    to a json file perhaps also with the streams API or something similar.
+
+
+
+Parameterized types
+
+
