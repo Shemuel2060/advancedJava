@@ -6,9 +6,29 @@
     "configurations": [
         {
             "type": "java",
+<<<<<<< HEAD
             "name": "Main",
             "request": "launch",
             "mainClass": "generics_collections.collectionsframework.collections.linkedlists.recursivelinking.Main",
+=======
+            "name": "EvenNumber",
+            "request": "launch",
+            "mainClass": "generics_collections.generics.EvenNumber",
+            "projectName": "AdvancedTopicsInJava_75f8213a"
+        },
+        {
+            "type": "java",
+            "name": "WildCardGenericsDemo",
+            "request": "launch",
+            "mainClass": "generics_collections.generics.WildCardGenericsDemo",
+            "projectName": "AdvancedTopicsInJava_75f8213a"
+        },
+        {
+            "type": "java",
+            "name": "BoxDemo",
+            "request": "launch",
+            "mainClass": "generics_collections.generics.BoxDemo",
+>>>>>>> typeinference
             "projectName": "AdvancedTopicsInJava_75f8213a"
         },
         {

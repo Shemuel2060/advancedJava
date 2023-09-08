@@ -1,4 +1,4 @@
-package MultiDimensionalArrays;
+package dataStructures_algorthms.arrays_exceptions_algorithmes.MultiDimensionalArrays;
 
 public class TestSymMatrix {
     static SymmetricMatrix mat = new SymmetricMatrix(4);
