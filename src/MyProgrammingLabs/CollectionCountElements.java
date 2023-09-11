@@ -1,4 +1,4 @@
-package Labs;
+package MyProgrammingLabs;
 
 import java.util.Collection;
 
@@ -6,7 +6,7 @@ public class CollectionCountElements implements CountInCollections {
 
     @Override
     public <E> int countElementsInCollection(Collection<E> c) {
-        // put code logic here....
+        // TODO Auto-generated method stub
         return 0;
     }
 
