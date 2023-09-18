@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "TestIntegerMatrix",
+            "request": "launch",
+            "mainClass": "generics_collections.generics.genericmatrixcasestudy.TestIntegerMatrix",
+            "projectName": "AdvancedTopicsInJava_75f8213a"
+        },
+        {
+            "type": "java",
             "name": "EvenNumber",
             "request": "launch",
             "mainClass": "generics_collections.generics.EvenNumber",
