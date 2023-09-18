@@ -7,10 +7,20 @@
         {
             "type": "java",
 <<<<<<< HEAD
+<<<<<<< HEAD
             "name": "Main",
             "request": "launch",
             "mainClass": "generics_collections.collectionsframework.collections.linkedlists.recursivelinking.Main",
 =======
+=======
+            "name": "TestIntegerMatrix",
+            "request": "launch",
+            "mainClass": "generics_collections.generics.genericmatrixcasestudy.TestIntegerMatrix",
+            "projectName": "AdvancedTopicsInJava_75f8213a"
+        },
+        {
+            "type": "java",
+>>>>>>> typeinference
             "name": "EvenNumber",
             "request": "launch",
             "mainClass": "generics_collections.generics.EvenNumber",
