@@ -12,7 +12,7 @@ import java.util.Scanner;
  */
 public class Dictionary {
 
-    private HashSet<String> dictionary = new HashSet<>();
+    private static HashSet<String> dictionary = new HashSet<>();
 
 
     /**
@@ -55,10 +55,18 @@ public class Dictionary {
         } catch (FileNotFoundException e) {
             
             e.printStackTrace();
-        }
+        }        
         
-        
+    } // end of printWordNotInDictionary() method
+
+    public static boolean checkIfWordInDictionary(String word) {
+        if (dictionary.contains(word)) {
+            return true; // word in dictionary
+        } else {
+             return false;
+        }        
     }
+    
 
     /**
      * This method returns a dictionary HashShet. The dictionary
@@ -68,6 +76,12 @@ public class Dictionary {
     public HashSet<String> getDictionary() {
         return dictionary;
     }
+
+
+
+
+
+    // ============== other implementations ==============
 
     public boolean addWord(String word) {
         return false;
