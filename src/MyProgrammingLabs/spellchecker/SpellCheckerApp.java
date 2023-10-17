@@ -3,6 +3,7 @@ package MyProgrammingLabs.spellchecker;
 import java.io.File;
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.TreeSet;
 
 /**
  * This is the main entry of the SpellChecker class.
@@ -32,11 +33,37 @@ public class SpellCheckerApp {
         // testing getBadWord()   System.out.println(SpellChecker.getBadWord()); - works
 
         // testing check word if in dictionary - works fine //  System.out.println(Dictionary.checkIfWordInDictionary("eta"));
-        
-        // testing changing any letter - works fine
-        
-        // String misspeltWord = SpellChecker.getBadWord();
-        // SpellChecker.suggestCorrections(misspeltWord,dictionary.getDictionary());    
+
+        // TreeSet<String> misspeltWordsSet = SpellChecker.getBadWord();
+        // for (String word : misspeltWordsSet) {
+        //     System.out.println(word);
+        // }
+
+        // test change any letter suggestions
+
+        TreeSet<String> misspeltWordsSet = SpellChecker.getBadWord();
+        TreeSet<String> corrected = new TreeSet<>();
+        for (String word : misspeltWordsSet) {
+            corrected = SpellChecker.suggestCorrections(word, dictionary.getDictionary());
+            // for (String word2 : corrected) {
+            //     System.out.print(word + ": ");
+            //     System.out.print(word2+", ");
+            // }
+            if (corrected.isEmpty()) {
+                System.out.print(word + ": " + "no suggestions\n");                    
+            } else {
+                Iterator<String> iter = corrected.iterator();
+                System.out.print(word + ": ");
+                while (iter.hasNext()) {
+                    System.out.print(iter.next() + ", ");
+                }
+                System.out.println();
+            }
+                
+
+            
+        }
+
         
     }
 }
