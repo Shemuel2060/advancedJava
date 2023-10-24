@@ -13,7 +13,11 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.Iterator;
+
 import javax.imageio.ImageIO;
 import javax.swing.BorderFactory;
 import javax.swing.JColorChooser;
@@ -41,7 +45,9 @@ public class DrawTextPanel extends JPanel  {
 	// variable should be replaced by a variable of type
 	// ArrayList<DrawStringItem> that can store multiple items.
 	
-	private DrawTextItem theString;  // change to an ArrayList<DrawTextItem> !
+	private DrawTextItem theString; // TODO:change to an ArrayList<DrawTextItem> !
+	private ArrayList<DrawTextItem> theStrings
+			= new ArrayList<>(); // replace everywhre theString is used with this...
 
 	
 	private Color currentTextColor = Color.BLACK;  // Color applied to new strings.
@@ -62,15 +68,20 @@ public class DrawTextPanel extends JPanel  {
 	private class Canvas extends JPanel {
 		Canvas() {
 			setPreferredSize( new Dimension(800,600) );
-			setBackground(Color.LIGHT_GRAY);
+			setBackground(Color.RED);
 			setFont( new Font( "Serif", Font.BOLD, 24 ));
 		}
 		protected void paintComponent(Graphics g) {
 			super.paintComponent(g);
 			((Graphics2D)g).setRenderingHint(RenderingHints.KEY_ANTIALIASING, 
 					RenderingHints.VALUE_ANTIALIAS_ON);
-			if (theString != null)
-				theString.draw(g);
+			// if (theString != null) /** TODO: should be changed to consider drawing from an arraylists */
+			// 	theString.draw(g);
+			for(DrawTextItem str: theStrings){
+				if(str!=null)
+					str.draw(g);
+			}
+
 		}
 	}
 	
@@ -129,7 +140,7 @@ public class DrawTextPanel extends JPanel  {
 		DrawTextItem s = new DrawTextItem( text, e.getX(), e.getY() );
 		s.setTextColor(currentTextColor);  // Default is null, meaning default color of the canvas (black).
 		
-//   SOME OTHER OPTIONS THAT CAN BE APPLIED TO TEXT ITEMS:
+//   SOME OTHER OPTIONS THAT CAN BE APPLIED TO TEXT ITEMS: TODO: Try out each...
 //		s.setFont( new Font( "Serif", Font.ITALIC + Font.BOLD, 12 ));  // Default is null, meaning font of canvas.
 //		s.setMagnification(3);  // Default is 1, meaning no magnification.
 //		s.setBorder(true);  // Default is false, meaning don't draw a border.
@@ -138,7 +149,8 @@ public class DrawTextPanel extends JPanel  {
 //		s.setBackground(Color.BLUE);  // Default is null, meaning don't draw a background area.
 //		s.setBackgroundTransparency(0.7);  // Default is 0, meaning background is not transparent.
 		
-		theString = s;  // Set this string as the ONLY string to be drawn on the canvas!
+		// theString = s; // Set this string as the ONLY string to be drawn on the canvas!
+		theStrings.add(s);
 		undoMenuItem.setEnabled(true);
 		canvas.repaint();
 	}
@@ -201,20 +213,63 @@ public class DrawTextPanel extends JPanel  {
 	 * @param command the text of the menu command.
 	 */
 	private void doMenuCommand(String command) {
-		if (command.equals("Save...")) { // save all the string info to a file
-			JOptionPane.showMessageDialog(this, "Sorry, the Save command is not implemented.");
-		}
-		else if (command.equals("Open...")) { // read a previously saved file, and reconstruct the list of strings
+		if (command.equals("Save...")) {
+			// save all the string info to a file
+			// JOptionPane.showMessageDialog(this, "Sorry, the Save command is not implemented.");
+
+			// get file from user
+				File imgContentFilesave = fileChooser.getInputFile(this,
+						"Choose file to save image info to");
+				// check if file selected
+				if (imgContentFilesave == null) {
+					return;
+				}
+
+				try (// instantiate PrintWriter object
+				PrintWriter saveToFile = new PrintWriter(imgContentFilesave)) {
+					// save the bg color
+					Canvas canv = new Canvas();
+					saveToFile.write("Red: " + canv.getBackground().getRed() + "\nGreen: " +
+							canv.getBackground().getGreen() + "\nBlue: " +
+							canv.getBackground().getBlue() + "\n");
+					 
+					
+					/* use PrintWriter to write to the got user file. This should
+					* include background color of the image, text representation 
+					* color and text of each DrawTextItem - essentially each string
+					* drawn on the canvas.*/
+					for (DrawTextItem d : theStrings) {
+						saveToFile.write(d.getString() + "\n" + d.getTextColor().getRed() + "|"
+						+d.getTextColor().getGreen()+"|"+d.getTextColor().getBlue());
+					}
+
+
+					// iterate through theStrings ArrayList
+					// extract the each text
+					// extract each text's color... 
+				}catch (FileNotFoundException e) {
+				// catch error.. and send useful message to user.
+					JOptionPane.showMessageDialog(this,
+							"Sorry, the file to save to was not found:\n" + e);
+			} 
+		} // end:: implementation of the save...
+
+		else if (command.equals("Open...")) {
+			// read a previously saved file, and reconstruct the list of strings
 			JOptionPane.showMessageDialog(this, "Sorry, the Open command is not implemented.");
 			canvas.repaint(); // (you'll need this to make the new list of strings take effect)
 		}
-		else if (command.equals("Clear")) {  // remove all strings
-			theString = null;   // Remove the ONLY string from the canvas.
+		else if (command.equals("Clear")) {
+			//TODO: remove all strings
+			theStrings.clear();
+			// theString = null;   // Remove the ONLY string from the canvas.
 			undoMenuItem.setEnabled(false);
 			canvas.repaint();
 		}
-		else if (command.equals("Remove Item")) { // remove the most recently added string
-			theString = null;   // Remove the ONLY string from the canvas.
+		else if (command.equals("Remove Item")) {
+			//TODO: remove the most recently added string
+			theStrings.remove(theStrings.size() - 1);
+			// theString = null;   // Remove the ONLY string from the canvas.
 			undoMenuItem.setEnabled(false);
 			canvas.repaint();
 		}
@@ -230,8 +285,11 @@ public class DrawTextPanel extends JPanel  {
 				canvas.repaint();
 			}
 		}
-		else if (command.equals("Save Image...")) {  // save a PNG image of the drawing area
-			File imageFile = fileChooser.getOutputFile(this, "Select Image File Name", "textimage.png");
+		else if (command.equals("Save Image...")) {
+
+			File imageFile = fileChooser.getOutputFile(this, "Select Image File Name",
+					"textimage.png");
+
 			if (imageFile == null)
 				return;
 			try {
@@ -239,21 +297,20 @@ public class DrawTextPanel extends JPanel  {
 				// draw the same data to the BufferedImage as is shown in the panel.
 				// A BufferedImage is an image that is stored in memory, not on the screen.
 				// There is a convenient method for writing a BufferedImage to a file.
-				BufferedImage image = new BufferedImage(canvas.getWidth(),canvas.getHeight(),
+				BufferedImage image = new BufferedImage(canvas.getWidth(), canvas.getHeight(),
 						BufferedImage.TYPE_INT_RGB);
 				Graphics g = image.getGraphics();
 				g.setFont(canvas.getFont());
-				canvas.paintComponent(g);  // draws the canvas onto the BufferedImage, not the screen!
+				canvas.paintComponent(g); // draws the canvas onto the BufferedImage, not the screen!
 				boolean ok = ImageIO.write(image, "PNG", imageFile); // write to the file
 				if (ok == false)
 					throw new Exception("PNG format not supported (this shouldn't happen!).");
-			}
-			catch (Exception e) {
-				JOptionPane.showMessageDialog(this, 
+			} catch (Exception e) {
+				JOptionPane.showMessageDialog(this,
 						"Sorry, an error occurred while trying to save the image:\n" + e);
 			}
 		}
-	}
+	} //end :: doMenuCommand()
 	
 
 }
