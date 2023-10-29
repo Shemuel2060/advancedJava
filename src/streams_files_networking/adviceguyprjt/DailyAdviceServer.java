@@ -30,7 +30,8 @@ public class DailyAdviceServer {
 
                 PrintWriter writer = new PrintWriter(sock.getOutputStream());/*We use the socket 
                                                                              connection to the client to get a writer
-                                                                             that will write or send the messages to the client
+                                                                             that will write or send the messages 
+                                                                             to the client
                                                                              */
 
                 String advice = getAdvice();

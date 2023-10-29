@@ -10,7 +10,7 @@ import java.util.Scanner;
  * a Web browser and display the requests on standard output.  The
  * program sets up a listener on port 50505.  It can be contacted
  * by a Web browser running on the same machine using a URL of the
- * form  http://localhost:505050/path/to/resource.html  This method
+ * form  http://localhost:50505/path/to/resource.html  This method
  * does not return any data to the web browser.  It simply reads the
  * request, writes it to standard output, and then closes the connection.
  * The program continues to run, and the server continues to listen
