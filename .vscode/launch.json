@@ -1,290 +1,296 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "type": "java",
-<<<<<<< HEAD
-<<<<<<< HEAD
-            "name": "Main",
-            "request": "launch",
-            "mainClass": "generics_collections.collectionsframework.collections.linkedlists.recursivelinking.Main",
-=======
-=======
-            "name": "TestIntegerMatrix",
-            "request": "launch",
-            "mainClass": "generics_collections.generics.genericmatrixcasestudy.TestIntegerMatrix",
-            "projectName": "AdvancedTopicsInJava_75f8213a"
-        },
-        {
-            "type": "java",
->>>>>>> typeinference
-            "name": "EvenNumber",
-            "request": "launch",
-            "mainClass": "generics_collections.generics.EvenNumber",
-            "projectName": "AdvancedTopicsInJava_75f8213a"
-        },
-        {
-            "type": "java",
-            "name": "WildCardGenericsDemo",
-            "request": "launch",
-            "mainClass": "generics_collections.generics.WildCardGenericsDemo",
-            "projectName": "AdvancedTopicsInJava_75f8213a"
-        },
-        {
-            "type": "java",
-            "name": "BoxDemo",
-            "request": "launch",
-            "mainClass": "generics_collections.generics.BoxDemo",
->>>>>>> typeinference
-            "projectName": "AdvancedTopicsInJava_75f8213a"
-        },
-        {
-            "type": "java",
-            "name": "CheckArrays",
-            "request": "launch",
-            "mainClass": "generics_collections.generics.CheckArrays",
-            "projectName": "AdvancedTopicsInJava_75f8213a"
-        },
-        {
-            "type": "java",
-            "name": "Box",
-            "request": "launch",
-            "mainClass": "generics_collections.generics.Box",
-            "projectName": "AdvancedTopicsInJava_75f8213a"
-        },
-        {
-            "type": "java",
-            "name": "Main",
-            "request": "launch",
-            "mainClass": "generics_collections.generics.Main",
-            "projectName": "AdvancedTopicsInJava_75f8213a"
-        },
-        {
-            "type": "java",
-            "name": "Main",
-            "request": "launch",
-            "mainClass": "conceptPractices.sorting.interfaces.relatables.Main",
-            "projectName": "AdvancedTopicsInJava_75f8213a"
-        },
-        {
-            "type": "java",
-            "name": "TestCards",
-            "request": "launch",
-            "mainClass": "conceptPractices.sorting.interfaces.cards.TestCards",
-            "projectName": "AdvancedTopicsInJava_75f8213a"
-        },
-        {
-            "type": "java",
-            "name": "Function_FI",
-            "request": "launch",
-            "mainClass": "conceptPractices.sorting.functionalInterfaces.Function_FI",
-            "projectName": "advancedJava_2383de6e"
-        },
-        {
-            "type": "java",
-            "name": "MultiDimArrays",
-            "request": "launch",
-            "mainClass": "MultiDimensionalArrays.MultiDimArrays",
-            "projectName": "advancedJava_2383de6e"
-        },
-        {
-            "type": "java",
-            "name": "SortingAlgorithms",
-            "request": "launch",
-            "mainClass": "dataStructures_algorthms.arrays_exceptions_algorithmes.ArrayHandling.SearchingAndSortingAlgorithms.SortingAlgorithms",
-            "projectName": "advancedJava_2383de6e"
-        },
-        {
-            "type": "java",
-            "name": "Main",
-            "request": "launch",
-            "mainClass": "conceptPractices.sorting.functionalInterfaces.Main",
-            "projectName": "advancedJava_2383de6e"
-        },
-        {
-            "type": "java",
-            "name": "TestSimpleTimeClient",
-            "request": "launch",
-            "mainClass": "conceptPractices.sorting.timedatezone.TestSimpleTimeClient",
-            "projectName": "advancedJava_2383de6e"
-        },
-        {
-            "type": "java",
-            "name": "SimpleTimeClient",
-            "request": "launch",
-            "mainClass": "conceptPractices.sorting.timedatezone.SimpleTimeClient",
-            "projectName": "advancedJava_2383de6e"
-        },
-        {
-            "type": "java",
-            "name": "Main",
-            "request": "launch",
-            "mainClass": "conceptPractices.sorting.interfaces.relatables.Main",
-            "projectName": "advancedJava_2383de6e"
-        },
-        {
-            "type": "java",
-            "name": "Main",
-            "request": "launch",
-            "mainClass": "conceptPractices.sorting.interfaces.Main",
-            "projectName": "advancedJava_2383de6e"
-        },
-        {
-            "type": "java",
-            "name": "Introduction",
-            "request": "launch",
-            "mainClass": "generics_collections.generics.Introduction",
-            "projectName": "AdvancedTopicsInJava_75f8213a"
-        },
-        {
-            "type": "java",
-            "name": "CollectionPublicMethodsTested",
-            "request": "launch",
-            "mainClass": "generics_collections.collectionsframework.CollectionPublicMethodsTested",
-            "projectName": "AdvancedTopicsInJava_75f8213a"
-        },
-        {
-            "type": "java",
-            "name": "CollectionPublicMethodsTested",
-            "request": "launch",
-            "mainClass": "generics_collections.collectionsframework.collections.linkedlists.CollectionPublicMethodsTested",
-            "projectName": "AdvancedTopicsInJava_75f8213a"
-        },
-        {
-            "type": "java",
-            "name": "Sort2DArrays",
-            "request": "launch",
-            "mainClass": "conceptPractices.sorting.Sort2DArrays",
-            "projectName": "AdvancedTopicsInJava_75f8213a"
-        },
-        {
-            "type": "java",
-            "name": "BuddyStrings",
-            "request": "launch",
-            "mainClass": "leetCodeProblems.BuddyStrings",
-            "projectName": "AdvancedTopicsInJava_75f8213a"
-        },
-        {
-            "type": "java",
-            "name": "TestRecursiveMethods",
-            "request": "launch",
-            "mainClass": "dataStructures_algorthms.recursion.TestRecursiveMethods",
-            "projectName": "AdvancedTopicsInJava_75f8213a"
-        },
-        {
-            "type": "java",
-            "name": "Current File",
-            "request": "launch",
-            "mainClass": "${file}"
-        },
-        {
-            "type": "java",
-            "name": "Implementer",
-            "request": "launch",
-            "mainClass": "dataStructures_algorthms.arrays_exceptions_algorithmes.ArrayHandling.ArrayLists.Implementer",
-            "projectName": "AdvancedTopicsInJava_75f8213a"
-        },
-        {
-            "type": "java",
-            "name": "TestDyanmicArray",
-            "request": "launch",
-            "mainClass": "dataStructures_algorthms.arrays_exceptions_algorithmes.ArrayHandling.GeneralArrays.DynamicArrays.TestDyanmicArray",
-            "projectName": "AdvancedTopicsInJava_75f8213a"
-        },
-        {
-            "type": "java",
-            "name": "testPartialArrays",
-            "request": "launch",
-            "mainClass": "dataStructures_algorthms.arrays_exceptions_algorithmes.ArrayHandling.GeneralArrays.PartialArrays.testPartialArrays",
-            "projectName": "AdvancedTopicsInJava_75f8213a"
-        },
-        {
-            "type": "java",
-            "name": "testArrayHandling",
-            "request": "launch",
-            "mainClass": "dataStructures_algorthms.arrays_exceptions_algorithmes.ArrayHandling.GeneralArrays.testArrayHandling",
-            "projectName": "AdvancedTopicsInJava_75f8213a"
-        },
-        {
-            "type": "java",
-            "name": "PhoneDirectory",
-            "request": "launch",
-            "mainClass": "dataStructures_algorthms.arrays_exceptions_algorithmes.ArrayHandling.SearchingAndSortingAlgorithms.AssoaciationLists.PhoneDirectory",
-            "projectName": "AdvancedTopicsInJava_75f8213a"
-        },
-        {
-            "type": "java",
-            "name": "Linear_BinarySearchAlgorithms",
-            "request": "launch",
-            "mainClass": "dataStructures_algorthms.arrays_exceptions_algorithmes.ArrayHandling.SearchingAndSortingAlgorithms.Linear_BinarySearchAlgorithms",
-            "projectName": "AdvancedTopicsInJava_75f8213a"
-        },
-        {
-            "type": "java",
-            "name": "SortingAlgorithms",
-            "request": "launch",
-            "mainClass": "dataStructures_algorthms.arrays_exceptions_algorithmes.ArrayHandling.SearchingAndSortingAlgorithms.SortingAlgorithms",
-            "projectName": "AdvancedTopicsInJava_75f8213a"
-        },
-        {
-            "type": "java",
-            "name": "Equations",
-            "request": "launch",
-            "mainClass": "dataStructures_algorthms.arrays_exceptions_algorithmes.Exceptions.Equations",
-            "projectName": "AdvancedTopicsInJava_75f8213a"
-        },
-        {
-            "type": "java",
-            "name": "LengthConverter",
-            "request": "launch",
-            "mainClass": "dataStructures_algorthms.arrays_exceptions_algorithmes.Exceptions.LengthConverter",
-            "projectName": "AdvancedTopicsInJava_75f8213a"
-        },
-        {
-            "type": "java",
-            "name": "TryStatementDemo",
-            "request": "launch",
-            "mainClass": "dataStructures_algorthms.arrays_exceptions_algorithmes.Exceptions.TryStatementDemo",
-            "projectName": "AdvancedTopicsInJava_75f8213a"
-        },
-        {
-            "type": "java",
-            "name": "WeightConverter",
-            "request": "launch",
-            "mainClass": "dataStructures_algorthms.arrays_exceptions_algorithmes.Exceptions.WeightConverter",
-            "projectName": "AdvancedTopicsInJava_75f8213a"
-        },
-        {
-            "type": "java",
-            "name": "MultiDimArrays",
-            "request": "launch",
-            "mainClass": "dataStructures_algorthms.arrays_exceptions_algorithmes.MultiDimensionalArrays.MultiDimArrays",
-            "projectName": "AdvancedTopicsInJava_75f8213a"
-        },
-        {
-            "type": "java",
-            "name": "TestSymMatrix",
-            "request": "launch",
-            "mainClass": "dataStructures_algorthms.arrays_exceptions_algorithmes.MultiDimensionalArrays.TestSymMatrix",
-            "projectName": "AdvancedTopicsInJava_75f8213a"
-        },
-        {
-            "type": "java",
-            "name": "RprintInformation",
-            "request": "launch",
-            "mainClass": "dataStructures_algorthms.recursion.RprintInformation",
-            "projectName": "AdvancedTopicsInJava_75f8213a"
-        },
-        {
-            "type": "java",
-            "name": "TowersOfHanoiGUI",
-            "request": "launch",
-            "mainClass": "dataStructures_algorthms.recursion.TowersOfHanoiGUI",
-            "projectName": "AdvancedTopicsInJava_75f8213a",
-            "vmArgs": "--module-path C:/Users/INTEL/OneDrive/Desktop/PROJECTS/JAVA/openjfx-19.0.2_windows-x64_bin-sdk/javafx-sdk-19.0.2/lib --add-modules javafx.controls,javafx.fxml"
-        }
-    ]
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "AreaServer",
+      "request": "launch",
+      "mainClass": "streams_files_networking.areaserver.AreaServer",
+      "vmArgs": "--module-path C:/Users/INTEL/Desktop/PROJECTS/JAVA/openjfx-19.0.2_windows-x64_bin-sdk/javafx-sdk-19.0.2/lib --add-modules javafx.controls,javafx.fxml",
+      "projectName": "AdvancedTopicsInJava_411a5e9f"
+    },
+    {
+      "type": "java",
+      "name": "AreaClient",
+      "request": "launch",
+      "vmArgs": "--module-path C:/Users/INTEL/Desktop/PROJECTS/JAVA/openjfx-19.0.2_windows-x64_bin-sdk/javafx-sdk-19.0.2/lib --add-modules javafx.controls,javafx.fxml",
+      "mainClass": "streams_files_networking.areaserver.AreaClient"
+    },
+    {
+      "type": "java",
+      "name": "TestIntegerMatrix",
+      "request": "launch",
+      "mainClass": "generics_collections.generics.genericmatrixcasestudy.TestIntegerMatrix",
+      "projectName": "AdvancedTopicsInJava_75f8213a"
+    },
+    {
+      "type": "java",
+      "name": "EvenNumber",
+      "request": "launch",
+      "mainClass": "generics_collections.generics.EvenNumber",
+      "projectName": "AdvancedTopicsInJava_75f8213a"
+    },
+    {
+      "type": "java",
+      "name": "WildCardGenericsDemo",
+      "request": "launch",
+      "mainClass": "generics_collections.generics.WildCardGenericsDemo",
+      "projectName": "AdvancedTopicsInJava_75f8213a"
+    },
+    {
+      "type": "java",
+      "name": "BoxDemo",
+      "request": "launch",
+      "mainClass": "generics_collections.generics.BoxDemo",
+      "projectName": "AdvancedTopicsInJava_75f8213a"
+    },
+    {
+      "type": "java",
+      "name": "CheckArrays",
+      "request": "launch",
+      "mainClass": "generics_collections.generics.CheckArrays",
+      "projectName": "AdvancedTopicsInJava_75f8213a"
+    },
+    {
+      "type": "java",
+      "name": "Box",
+      "request": "launch",
+      "mainClass": "generics_collections.generics.Box",
+      "projectName": "AdvancedTopicsInJava_75f8213a"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "generics_collections.generics.Main",
+      "projectName": "AdvancedTopicsInJava_75f8213a"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "conceptPractices.sorting.interfaces.relatables.Main",
+      "projectName": "AdvancedTopicsInJava_75f8213a"
+    },
+    {
+      "type": "java",
+      "name": "TestCards",
+      "request": "launch",
+      "mainClass": "conceptPractices.sorting.interfaces.cards.TestCards",
+      "projectName": "AdvancedTopicsInJava_75f8213a"
+    },
+    {
+      "type": "java",
+      "name": "Function_FI",
+      "request": "launch",
+      "mainClass": "conceptPractices.sorting.functionalInterfaces.Function_FI",
+      "projectName": "advancedJava_2383de6e"
+    },
+    {
+      "type": "java",
+      "name": "MultiDimArrays",
+      "request": "launch",
+      "mainClass": "MultiDimensionalArrays.MultiDimArrays",
+      "projectName": "advancedJava_2383de6e"
+    },
+    {
+      "type": "java",
+      "name": "SortingAlgorithms",
+      "request": "launch",
+      "mainClass": "dataStructures_algorthms.arrays_exceptions_algorithmes.ArrayHandling.SearchingAndSortingAlgorithms.SortingAlgorithms",
+      "projectName": "advancedJava_2383de6e"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "conceptPractices.sorting.functionalInterfaces.Main",
+      "projectName": "advancedJava_2383de6e"
+    },
+    {
+      "type": "java",
+      "name": "TestSimpleTimeClient",
+      "request": "launch",
+      "mainClass": "conceptPractices.sorting.timedatezone.TestSimpleTimeClient",
+      "projectName": "advancedJava_2383de6e"
+    },
+    {
+      "type": "java",
+      "name": "SimpleTimeClient",
+      "request": "launch",
+      "mainClass": "conceptPractices.sorting.timedatezone.SimpleTimeClient",
+      "projectName": "advancedJava_2383de6e"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "conceptPractices.sorting.interfaces.relatables.Main",
+      "projectName": "advancedJava_2383de6e"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "conceptPractices.sorting.interfaces.Main",
+      "projectName": "advancedJava_2383de6e"
+    },
+    {
+      "type": "java",
+      "name": "Introduction",
+      "request": "launch",
+      "mainClass": "generics_collections.generics.Introduction",
+      "projectName": "AdvancedTopicsInJava_75f8213a"
+    },
+    {
+      "type": "java",
+      "name": "CollectionPublicMethodsTested",
+      "request": "launch",
+      "mainClass": "generics_collections.collectionsframework.CollectionPublicMethodsTested",
+      "projectName": "AdvancedTopicsInJava_75f8213a"
+    },
+    {
+      "type": "java",
+      "name": "CollectionPublicMethodsTested",
+      "request": "launch",
+      "mainClass": "generics_collections.collectionsframework.collections.linkedlists.CollectionPublicMethodsTested",
+      "projectName": "AdvancedTopicsInJava_75f8213a"
+    },
+    {
+      "type": "java",
+      "name": "Sort2DArrays",
+      "request": "launch",
+      "mainClass": "conceptPractices.sorting.Sort2DArrays",
+      "projectName": "AdvancedTopicsInJava_75f8213a"
+    },
+    {
+      "type": "java",
+      "name": "BuddyStrings",
+      "request": "launch",
+      "mainClass": "leetCodeProblems.BuddyStrings",
+      "projectName": "AdvancedTopicsInJava_75f8213a"
+    },
+    {
+      "type": "java",
+      "name": "TestRecursiveMethods",
+      "request": "launch",
+      "mainClass": "dataStructures_algorthms.recursion.TestRecursiveMethods",
+      "projectName": "AdvancedTopicsInJava_75f8213a"
+    },
+    {
+      "type": "java",
+      "name": "Current File",
+      "request": "launch",
+      "mainClass": "${file}"
+    },
+    {
+      "type": "java",
+      "name": "Implementer",
+      "request": "launch",
+      "mainClass": "dataStructures_algorthms.arrays_exceptions_algorithmes.ArrayHandling.ArrayLists.Implementer",
+      "projectName": "AdvancedTopicsInJava_75f8213a"
+    },
+    {
+      "type": "java",
+      "name": "TestDyanmicArray",
+      "request": "launch",
+      "mainClass": "dataStructures_algorthms.arrays_exceptions_algorithmes.ArrayHandling.GeneralArrays.DynamicArrays.TestDyanmicArray",
+      "projectName": "AdvancedTopicsInJava_75f8213a"
+    },
+    {
+      "type": "java",
+      "name": "testPartialArrays",
+      "request": "launch",
+      "mainClass": "dataStructures_algorthms.arrays_exceptions_algorithmes.ArrayHandling.GeneralArrays.PartialArrays.testPartialArrays",
+      "projectName": "AdvancedTopicsInJava_75f8213a"
+    },
+    {
+      "type": "java",
+      "name": "testArrayHandling",
+      "request": "launch",
+      "mainClass": "dataStructures_algorthms.arrays_exceptions_algorithmes.ArrayHandling.GeneralArrays.testArrayHandling",
+      "projectName": "AdvancedTopicsInJava_75f8213a"
+    },
+    {
+      "type": "java",
+      "name": "PhoneDirectory",
+      "request": "launch",
+      "mainClass": "dataStructures_algorthms.arrays_exceptions_algorithmes.ArrayHandling.SearchingAndSortingAlgorithms.AssoaciationLists.PhoneDirectory",
+      "projectName": "AdvancedTopicsInJava_75f8213a"
+    },
+    {
+      "type": "java",
+      "name": "Linear_BinarySearchAlgorithms",
+      "request": "launch",
+      "mainClass": "dataStructures_algorthms.arrays_exceptions_algorithmes.ArrayHandling.SearchingAndSortingAlgorithms.Linear_BinarySearchAlgorithms",
+      "projectName": "AdvancedTopicsInJava_75f8213a"
+    },
+    {
+      "type": "java",
+      "name": "SortingAlgorithms",
+      "request": "launch",
+      "mainClass": "dataStructures_algorthms.arrays_exceptions_algorithmes.ArrayHandling.SearchingAndSortingAlgorithms.SortingAlgorithms",
+      "projectName": "AdvancedTopicsInJava_75f8213a"
+    },
+    {
+      "type": "java",
+      "name": "Equations",
+      "request": "launch",
+      "mainClass": "dataStructures_algorthms.arrays_exceptions_algorithmes.Exceptions.Equations",
+      "projectName": "AdvancedTopicsInJava_75f8213a"
+    },
+    {
+      "type": "java",
+      "name": "LengthConverter",
+      "request": "launch",
+      "mainClass": "dataStructures_algorthms.arrays_exceptions_algorithmes.Exceptions.LengthConverter",
+      "projectName": "AdvancedTopicsInJava_75f8213a"
+    },
+    {
+      "type": "java",
+      "name": "TryStatementDemo",
+      "request": "launch",
+      "mainClass": "dataStructures_algorthms.arrays_exceptions_algorithmes.Exceptions.TryStatementDemo",
+      "projectName": "AdvancedTopicsInJava_75f8213a"
+    },
+    {
+      "type": "java",
+      "name": "WeightConverter",
+      "request": "launch",
+      "mainClass": "dataStructures_algorthms.arrays_exceptions_algorithmes.Exceptions.WeightConverter",
+      "projectName": "AdvancedTopicsInJava_75f8213a"
+    },
+    {
+      "type": "java",
+      "name": "MultiDimArrays",
+      "request": "launch",
+      "mainClass": "dataStructures_algorthms.arrays_exceptions_algorithmes.MultiDimensionalArrays.MultiDimArrays",
+      "projectName": "AdvancedTopicsInJava_75f8213a"
+    },
+    {
+      "type": "java",
+      "name": "TestSymMatrix",
+      "request": "launch",
+      "mainClass": "dataStructures_algorthms.arrays_exceptions_algorithmes.MultiDimensionalArrays.TestSymMatrix",
+      "projectName": "AdvancedTopicsInJava_75f8213a"
+    },
+    {
+      "type": "java",
+      "name": "RprintInformation",
+      "request": "launch",
+      "mainClass": "dataStructures_algorthms.recursion.RprintInformation",
+      "projectName": "AdvancedTopicsInJava_75f8213a"
+    },
+    {
+      "type": "java",
+      "name": "TowersOfHanoiGUI",
+      "request": "launch",
+      "mainClass": "dataStructures_algorthms.recursion.TowersOfHanoiGUI",
+      "projectName": "AdvancedTopicsInJava_75f8213a",
+      "vmArgs": "--module-path C:/Users/INTEL/OneDrive/Desktop/PROJECTS/JAVA/openjfx-19.0.2_windows-x64_bin-sdk/javafx-sdk-19.0.2/lib --add-modules javafx.controls,javafx.fxml"
+    }
+  ]
 }

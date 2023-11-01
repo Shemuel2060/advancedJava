@@ -23,6 +23,7 @@ public class WebServerMainApp {
     public static void main(String[] args) {
         // request sample:
         // http://localhost:5000/S:\Home\shemuel\www/index.html
+        // http://localhost:5000/C:\Users\INTEL\Desktop\PROJECTS_2023\WORK\WEBSITES\Arola Tech\Arola Technologies\root\index.html
         // or http://localhost:5000/path/to/resource.html 
         // create server socket
         ServerSocket serverSocket;
@@ -95,20 +96,6 @@ public class WebServerMainApp {
                     }
                     
                     // send response....
-
-                    // trial code....
-                    // PrintWriter out = new PrintWriter(clientSocket.getOutputStream());
-
-                    // String response = "You have requested this resource: " + requestedResource;
-
-                    // out.print("HTTP/1.1 200 OK\n");
-                    // out.print("Content-Length: " + response.length() + "\n");
-                    // out.print("Content-Type: text/html; charset=utf-8\n");
-                    // out.print("Date: Sunday, 29 Oct 2023\n");
-                    // out.print("\n");
-                    // out.print(response);
-                    // out.flush();
-                    // trial code....ended..
                     String rootDirectory = "S:\\Home\\shemuel\\www"; /*
                     
                                                                     * root directory - where the
@@ -152,7 +139,6 @@ public class WebServerMainApp {
         } 
         catch (Exception e) {
             // for now just return incase of an error
-            System.out.println("Illegal header for the request....SORRY!");
             return;
         }
         finally {
@@ -297,7 +283,7 @@ public class WebServerMainApp {
         }
         writer.print("Content-Length: " + file.length() + "\n");
         writer.print("Content-Type: text/html; charset=utf-8\n");
-        writer.print("Date: Sunday, 29 Oct 2023\n");
+        writer.print("Date: Sunday, 29 Oct 2023\n"); // TODO: use the date class to get current date
         writer.print("\n");
         writer.flush();
     } // end:: sendHeaderStatus
